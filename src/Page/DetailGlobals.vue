@@ -66,7 +66,7 @@ import axios from 'axios';
                     });
                     this.loading = false;
                 } catch (error) {
-                    console.log(error);
+                    alert(error);
                 }
             },
             checkNull(data) {
