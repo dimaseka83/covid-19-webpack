@@ -2,39 +2,45 @@
   "name": "covid19-vue",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js",
-    "serve": "http-server dist -p 8080"
+    "build": "webpack -p --progress --mode production --config webpack.config.js",
+    "predeploy": "npm run build && npm run purge",
+    "deploy": "gh-pages -d dist",
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --open --config webpack.config.js",
+    "lint": "eslint src/js",
+    "lint:fix": "npm run lint -- --fix",
+    "purge": "purgecss --config purgecss.config.js --output dist/css",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimaseka83/covid-19-webpack.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimaseka83/covid-19-webpack/issues"
+  },
+  "homepage": "https://github.com/dimaseka83/covid-19-webpack#readme",
   "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.4.2",
-    "html-webpack-plugin": "^3.2.0",
-    "sass": "~1.32.0",
-    "sass-loader": "^10.0.0",
-    "vue": "^2.6.11",
-    "vue-loader": "^15.8.3",
-    "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.11",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1",
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "babel-loader": "^8.2.5",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1",
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "clean-webpack-plugin": "^4.0.0",
-    "deepmerge": "^4.2.2",
-    "http-serve": "^1.0.1",
-    "http-server": "^14.1.1",
-    "vue-router": "^3.5.2",
-    "vuetify": "^2.6.4"
+    "regenerator-runtime": "^0.13.9"
   }
 }
