@@ -1,0 +1,140 @@
+.st0 {
+    fill: #f6f6f6;
+}
+.st1 {
+    fill: #010101;
+}
+.st2 {
+    fill: #f5f5f5;
+}
+.st3 {
+    fill: #020202;
+}
+.st4 {
+    fill: #fefefe;
+}
+.st5 {
+    fill: #f3f3f3;
+}
+.st6 {
+    fill: #fdfdfd;
+}
+.st7 {
+    fill: #fcfcfc;
+}
+.st8 {
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-miterlimit: 10;
+}
+.st9 {
+    fill: none;
+    stroke: #000000;
+    stroke-miterlimit: 10;
+}
+.st10 {
+    fill: url(#SVGID_1_);
+}
+.st11 {
+    fill: url(#SVGID_2_);
+}
+.st12 {
+    fill: url(#SVGID_3_);
+}
+.st13 {
+    fill: url(#SVGID_4_);
+}
+.st14 {
+    fill: url(#SVGID_5_);
+}
+.st15 {
+    fill: url(#SVGID_6_);
+}
+.st16 {
+    fill: url(#SVGID_7_);
+}
+.st17 {
+    fill: url(#SVGID_8_);
+}
+.st18 {
+    fill: url(#SVGID_9_);
+}
+.st19 {
+    fill: url(#SVGID_10_);
+}
+.st20 {
+    fill: url(#SVGID_11_);
+}
+.st21 {
+    fill: url(#SVGID_12_);
+}
+.st22 {
+    fill: url(#SVGID_13_);
+}
+.st23 {
+    fill: #ca368d;
+}
+.st24 {
+    fill: #79226c;
+}
+.st25 {
+    fill: url(#SVGID_14_);
+}
+.st26 {
+    fill: url(#SVGID_15_);
+}
+.st27 {
+    fill: url(#SVGID_16_);
+}
+.st28 {
+    fill: url(#SVGID_17_);
+}
+.st29 {
+    fill: url(#SVGID_18_);
+}
+.st30 {
+    fill: url(#SVGID_19_);
+}
+.st31 {
+    fill: url(#SVGID_20_);
+}
+.st32 {
+    fill: url(#SVGID_21_);
+}
+.st33 {
+    fill: url(#SVGID_22_);
+}
+.st34 {
+    fill: url(#SVGID_23_);
+}
+.st35 {
+    fill: url(#SVGID_24_);
+}
+.st36 {
+    fill: url(#SVGID_25_);
+}
+.st37 {
+    opacity: 0.8;
+}
+.st38 {
+    fill: #ffffff;
+}
+svg {
+    height: 120px;
+    width: 120px;
+    fill: rgb(142, 158, 172);
+    opacity: 0.5;
+    pointer-events: none;
+    animation: 10s linear 0s infinite normal none running mymove;
+}
+@keyframes mymove {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+g {
+    fill: rgb(76, 175, 80);
+}

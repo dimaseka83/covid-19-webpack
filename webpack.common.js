@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
- 
+
 module.exports = {
   entry: {
     app: path.resolve(__dirname, 'src/scripts/index.js'),
@@ -25,6 +25,13 @@ module.exports = {
         ],
       },
     ],
+  },
+  resolve: {
+    alias: {
+      vue$: 'vue/dist/vue.esm.js',
+      '@': path.resolve(__dirname, './src'),
+    },
+    extensions: ['*', '.js', '.json'],
   },
   plugins: [
     new HtmlWebpackPlugin({
