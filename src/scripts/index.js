@@ -4,9 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Packages
 import 'bootstrap';
-import 'jquery';
 import 'popper.js';
-import 'select2';
 
 // components
 import './components/header';
+
+// Page
+import './views/home';
