@@ -1,0 +1,12 @@
+footer{
+    padding: 16px;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer p a{
+    color: #db4437;
+    text-decoration: none;
+}

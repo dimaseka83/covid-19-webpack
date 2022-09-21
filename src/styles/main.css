@@ -1,0 +1,16 @@
+main {
+    padding: 32px;
+    flex: 1;
+}
+
+.content{
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.content .content__heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}

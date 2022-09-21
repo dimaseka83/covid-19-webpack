@@ -4,14 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p --progress --mode production --config webpack.config.js",
-    "predeploy": "npm run build && npm run purge",
-    "deploy": "gh-pages -d dist",
-    "dev": "cross-env NODE_ENV=dev webpack-dev-server --open --config webpack.config.js",
-    "lint": "eslint src/js",
-    "lint:fix": "npm run lint -- --fix",
-    "purge": "purgecss --config purgecss.config.js --output dist/css",
-    "start": "npm run dev"
+    "start-dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
